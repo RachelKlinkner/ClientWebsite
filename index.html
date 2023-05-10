@@ -15,39 +15,57 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="clientimages/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+<script src="scripts.js"></script>
 </head>
 <body>
 <header>
+    <div class="hamburger" onclick="toggleNav()">
+        <hr>
+        <hr>
+        <hr>
+    </div>
     <h1>Klinkner Breezy Acres Dairy</h1>
     <img src="clientimages/logo.png" alt="logo">
+    <nav class="toggle-nav">
     <a href="#home">Home</a>
     <a href="#about-us">About Us</a>
     <a href="#our-practices">Our Practices</a>
     <a href="#gallery">Gallery</a>
     <a href="#dairy-resources">Dairy Resources</a>
     <a href="#contact-us">Contact Us</a>
+    </nav>
 </header>
 <main>
+    <section class="welcome">
     <h1>WELCOME</h1>
+    <div>
     <p>Klinkner Breezy Acres Dairy is a 
         sixth-generation organic dairy farm in 
         rural Cashton, WI, which has been 
         proudly owned and operated by family 
-        for over 160 years. 
-        
+        for over 160 years.</p>
+    <p>
         The goal of the Klinkner Breezy Acres 
         website is to share the farm’s history and 
         success with other agriculturalists and 
         educate consumers on the dairy industry.</p>
+    </div>
     <img src="clientimages/family.jpg" alt="family">
+</section>
+<section class="whatshappeningonthefarm">
     <h2>What's Happening on the Farm</h2>
-        <p>Haying Season is Upon Us</p>
+    <div>
+        <p><b>Haying Season is Upon Us</b></p>
         <img src="clientimages/haying.jpg" alt="haying">
-        <p>A New Addition on the Farm</p>
+        <p><b>A New Addition on the Farm</b></p>
         <img src="clientimages/barn.jpg" alt="barn">
-        <p>Ally Had Her Calf</p>
+        <p><b>Ally Had Her Calf</b></p>
         <img src="clientimages/newcalf.jpg" alt="calf">
+    </div>
+    </section>
+<section class=facts>
     <h2>Wisconsin Dairy Facts</h2>
         <img src="clientimages/facts1.png" alt="WIdairyfacts">
         <img src="clientimages/facts2.png" alt="WIdairyfacts2">
         <p>Courtesy of Dairy Farmers of Wisconsin</p>
+    </section>

@@ -1,0 +1,116 @@
+body{
+    background-color: #ffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+.hamburger{
+    width:40px;
+    padding: 0.5rem;
+    position:absolute; right:0; top:0;
+}
+.hamburger hr{
+    margin:.75rem 0;
+    border:1px solid black;
+}
+header{
+    position: relative;
+}
+header h1{
+    display:none;
+}
+header img{
+    max-width: 30rem;
+    position:absolute;
+}
+header nav{
+    display:none;
+}
+header nav.show{
+    display:block;
+}
+.toggle-nav{
+
+}
+.welcome h1{
+    text-align: center;
+    color:#ED151D;
+    font-size: 50px;
+}
+.welcome div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.welcome img{
+    max-width:26rem;
+    margin:2rem;
+}
+.whatshappeningonthefarm h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px;
+}
+.whatshappeningonthefarm img{
+    max-width:22rem;
+    margin:1rem;
+}
+.whatshappeningonthefarm div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.whatshappeningonthefarm p{
+    text-align: center;
+    font-size:22px;
+}
+.facts h2{
+    text-align: center;
+    color:#ED151D;
+    font-size:30px;
+}
+.facts img{
+    max-width:25rem;
+    margin:2rem;
+}
+.facts p{
+    text-align: center;
+    font-size:15px;
+}
+.history h1{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px;
+}
+.history div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.awards h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px;
+}
+.awards div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.awards img{
+    max-width:25rem;
+    margin:1rem 3rem;
+}
+.home h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px;
+}
+.home img{
+    max-width:25rem;
+    margin:1rem 3rem;
+}
+.home div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
