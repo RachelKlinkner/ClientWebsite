@@ -28,9 +28,6 @@ header nav{
 header nav.show{
     display:block;
 }
-.toggle-nav{
-
-}
 .welcome h1{
     text-align: center;
     color:#ED151D;
