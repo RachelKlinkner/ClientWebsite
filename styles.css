@@ -6,7 +6,7 @@ body{
 .hamburger{
     width:40px;
     padding: 0.5rem;
-    position:absolute; right:0; top:0;
+    position:absolute; right:40px; top:0; z-index:1;
 }
 .hamburger hr{
     margin:.75rem 0;
@@ -20,14 +20,27 @@ header h1{
 }
 header img{
     max-width: 30rem;
-    position:absolute;
 }
 header nav{
     display:none;
+    position:absolute; right:40px; top:60px; z-index:2;
+    background-color: #ED151D;
+}
+header nav a{
+    color:#ffff;
+    text-decoration: none;
+    padding:1rem;
+    border-bottom:1px solid transparent;
+}
+header nav a:hover{
+    border-bottom:1px solid black;
+    background-color: #ffff;
+    color:black;
 }
 header nav.show{
-    display:block;
+    display:flex; flex-direction:column;
 }
+
 .welcome h1{
     text-align: center;
     color:#ED151D;
@@ -49,9 +62,10 @@ header nav.show{
 }
 .whatshappeningonthefarm img{
     max-width:22rem;
-    margin:1rem;
+    margin:1rem auto;
+    display:block;
 }
-.whatshappeningonthefarm div{
+.whatshappeningonthefarm>div{
     margin:2rem;
     background-color: #3f8bd759;
     padding:1rem;
@@ -76,7 +90,7 @@ header nav.show{
 .history h1{
     text-align:center;
     color:#ED151D;
-    font-size: 30px;
+    font-size: 50px;
 }
 .history div{
     margin:2rem;
@@ -110,4 +124,264 @@ header nav.show{
     margin:2rem;
     background-color: #3f8bd759;
     padding:1rem;
+}
+.practices h1{
+    text-align:center;
+    color:#ED151D;
+    font-size: 50px;
+}
+.organic h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px; 
+}
+.organic div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.sustainability h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px; 
+}
+.sustainability div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.breeding h2{
+        text-align:center;
+        color:#ED151D;
+        font-size: 30px; 
+}
+.breeding div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+
+/*Carosel Component*/
+.carosel{
+	margin:3rem auto 1rem;
+	position:relative;
+	max-width:80%;
+}
+
+.carosel .images{
+	overflow:hidden;
+	position:relative;
+  width: 360px;
+  max-width: 100%;
+}
+
+.carosel .very-wide{
+	position:absolute;
+	left:0;
+	transition:left .2s;
+  display: flex;
+  align-items: center;
+}
+
+.carosel>div>div>div{
+  width: 360px;
+	margin:0 8px 0;
+    text-align:center;
+}
+.carosel,
+.carosel .images,
+.carosel>div>div>div{
+	height:240px;
+}
+.carosel img{
+  max-height: 240px;
+  max-width: calc(100% - 40px);
+}
+.carosel .arrow-left, .carosel .arrow-right{
+  cursor:pointer;
+  font-size: 2rem;
+  top:48%;
+	position:absolute;
+    top:35%;
+  color:black;
+  z-index: 3;
+}
+.carosel .arrow-left{
+	left:0;
+}
+.carosel .arrow-right{
+	right:0;
+}
+.carosel>div>div>div{
+  position: relative;
+}
+.photogallery h1{
+    text-align:center;
+    color:#ED151D;
+    font-size: 50px;
+}
+.animals h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px; 
+}
+.machinery h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px; 
+}
+.landscape h2{
+    text-align:center;
+    color:#ED151D;
+    font-size: 30px; 
+}
+.resources h1{
+    text-align:center;
+    color:#ED151D;
+    font-size: 50px;
+}
+.local h2{
+    text-align:left;
+    color:#ED151D;
+    font-size: 30px; 
+    margin:2rem;
+}
+.local div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.sources h2{
+    text-align:left;
+    color:#ED151D;
+    font-size: 30px; 
+    margin:2rem;
+}
+.sources div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+}
+.websites div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+}
+.websites img{
+    max-width:15rem;
+}
+.map iframe{
+    max-width:100%;
+}
+.map{
+    margin:2rem;
+}
+.contact h1{
+    text-align:center;
+    color:#ED151D;
+    font-size: 50px;
+}
+.contact div{
+    margin:2rem;
+    background-color: #3f8bd759;
+    padding:1rem;
+    text-align:center;
+}
+.contact img{
+    max-width: 50%;
+    margin:0 8rem;
+}
+
+
+@media (min-width:1200px){
+  .carosel{
+		width:736px;
+	}
+	.carosel .images{
+		width:unset;
+	}
+    .hamburger{
+        display:none;
+    }
+    header nav{
+        display:flex;
+        position:unset;
+        justify-content:center;
+    }
+    header h1{
+        display:inline-block;
+        vertical-align:middle;
+        font-size:3rem;
+    }
+    header img{
+        vertical-align: middle;
+    }
+    .welcome div{
+        display:inline-block;
+        width:50%;
+        vertical-align:middle;
+    }
+    .welcome img{
+        vertical-align:middle;
+    }
+    .whatshappeningonthefarm>div{
+        display:flex;
+        justify-content: space-between;
+    }
+    .whatshappeningonthefarm>div>div{
+        width:30%;
+        background-color: transparent;
+    }
+    .whatshappeningonthefarm img {
+        max-width: 100%;
+    }
+    .facts{
+        text-align:center;
+    }
+    .awards div{
+        display:inline-block;
+        width:55%;
+        vertical-align:middle;
+    }
+    .awards img{
+        vertical-align:middle;
+        margin:0;
+    }
+    .home div{
+        display:inline-block;
+        width:55%;
+        vertical-align:middle;
+    }
+    .home img{
+        vertical-align:middle;
+        margin:0 0 0 2rem;
+    }
+    .map iframe{
+        width:80%;
+    }
+    .map a{
+        display:block;
+    }
+    .websites div{
+        display:grid;
+        grid-template-columns: 10rem 1fr 10rem 1fr;
+    }
+    .contact img{
+        margin: 0 0 0 20rem;
+    }
+    .contact div{
+        font-size:20px;
+    }
+    .carosel .arrow-right{
+        right:-2rem;
+    }
+}
+@media (min-width:1800px){
+	.carosel{
+		width:1104px;
+	}
 }
