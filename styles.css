@@ -200,7 +200,6 @@ header nav.show{
 .carosel .arrow-left, .carosel .arrow-right{
   cursor:pointer;
   font-size: 2rem;
-  top:48%;
 	position:absolute;
     top:35%;
   color:black;
@@ -316,6 +315,7 @@ header nav.show{
         display:inline-block;
         vertical-align:middle;
         font-size:3rem;
+        margin-left:8%;
     }
     header img{
         vertical-align: middle;
@@ -341,6 +341,10 @@ header nav.show{
     }
     .facts{
         text-align:center;
+    }
+    main{
+        max-width:80rem;
+        margin:auto;
     }
     .awards div{
         display:inline-block;
@@ -384,4 +388,7 @@ header nav.show{
 	.carosel{
 		width:1104px;
 	}
+    .arrow-left, .arrow-right{
+        display:none;
+    }
 }
